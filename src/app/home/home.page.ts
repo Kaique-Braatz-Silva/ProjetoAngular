@@ -17,14 +17,13 @@ export class HomePage {
 
   exibir(valor: number) {
     if (this.operador) {
-      
-      this.valor2 = valor;
+      this.valor2 = +valor;
     } else {
-    
-      this.valor1 = valor;
+      this.valor1 = +valor;
     }
     this.inputValue += valor; 
   }
+  
 
 
 
@@ -48,6 +47,7 @@ export class HomePage {
         this.resultado = this.valor1 / this.valor2;
         break;
       case '%':
+
         this.resultado = this.valor1 % this.valor2;
         break;
       default:
@@ -55,10 +55,7 @@ export class HomePage {
     }
 
   
-    this.valor1 = null;
-    this.valor2 = null;
-    this.operador = null;
-
+ 
 
     this.inputValue = this.resultado;
   }
