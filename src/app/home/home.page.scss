@@ -1,4 +1,32 @@
 .menu_toolbar{
-    --background:red;
+    --background:blue;
+    color: white;
+    text-align: center;
     
+}
+
+img{
+    height: 70px;
+    width: 200px;
+}
+
+.sub_titulo{
+    text-align: center;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+}
+
+ion-app{
+    background: red;
+}
+
+.ion-page{
+    background: red;
+}
+
+ion-button{
+    --background:blue;
 }
